@@ -1,0 +1,148 @@
+/* ===== Header Layout ===== */
+header.flex {
+  justify-content: space-between;
+  padding: 0 2.4rem;
+  margin-top: 1.2rem;
+}
+
+/* ===== Nav ===== */
+header ul.flex {
+  gap: 16px;
+}
+
+header.flex nav {
+  background-color: var(--bgHeader);
+  padding: 0.77rem 1.6rem;
+  border-radius: 55px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Links ===== */
+header ul li a {
+  color: var(--title);
+  opacity: 0.9;
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+header ul li a:hover {
+  color: var(--blue);
+  opacity: 1;
+}
+
+/* ===== Buttons ===== */
+header button {
+  font-size: 1.2rem;
+}
+.menu{
+  text-align: center;
+}
+header .icon-menu,
+header button.mode {
+  background-color: var(--bgHeader);
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--subtitle);
+  border: 1px solid rgba(244, 165, 96, 0.25);
+  transition: border 0.2s ease, color 0.2s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+header .icon-sun {
+  color: rgb(255, 166, 0);
+}
+
+header .icon-menu:hover,
+header button.mode:hover {
+  color: var(--title);
+  border-color: rgba(244, 165, 96, 0.9);
+}
+
+/* ===== Title ===== */
+.title-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #60a5fa, var(--blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+/* ===== Mobile Menu ===== */
+header .fixed {
+  position: fixed;
+  inset: 0;
+  z-index: 11;
+  background-color: rgba(40, 40, 48, 0.96);
+}
+
+@keyframes modelMove {
+  from {
+    transform: translateY(-10px) scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+header .fixed ul.model {
+  animation: modelMove 0.25s ease-out;
+  will-change: transform, opacity;
+  width: 75%;
+  margin: 2rem auto 0;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background-color: var(--secondary);
+}
+
+header .fixed ul.model li {
+  border-bottom: 1px solid var(--border);
+  padding: 0.77rem 0;
+}
+
+header .fixed ul.model li:first-child {
+  text-align: right;
+  border: none;
+  padding-bottom: 0;
+}
+
+header .fixed ul.model li:last-child {
+  border: none;
+}
+
+header .icon-cross {
+  color: var(--subtitle);
+  font-size: 1rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+header .icon-cross:hover {
+  color: crimson;
+  transform: rotate(180deg);
+}
+
+/* ===== Responsive ===== */
+header button.menu {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .title-name {
+    display: none;
+  }
+
+  header.flex nav {
+    display: none;
+  }
+
+  header button.menu {
+    display: block;
+  }
+}

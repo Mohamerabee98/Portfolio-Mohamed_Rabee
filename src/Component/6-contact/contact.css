@@ -1,0 +1,172 @@
+/* ===== Contact Section ===== */
+section.contact-us {
+  padding: var(--container-padding);
+  background-color: var(--secondary);
+  color: var(--title);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== Icon ===== */
+section.contact-us .icon-mail-envelope-closed {
+  color: var(--subtitle);
+  font-size: 1.8rem;
+}
+
+/* ===== Subtitle ===== */
+section.contact-us .sub-title {
+  color: var(--subtitle);
+  margin: 10px auto 30px;
+  max-width: 520px;
+  line-height: 1.6rem;
+}
+
+/* ======================== */
+/* ===== Main Layout ===== */
+/* ======================== */
+.contact-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+/* ===== Form ===== */
+section.contact-us form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  width: 100%;
+  max-width: 420px;
+  text-align: left;
+}
+
+/* ===== Labels ===== */
+section.contact-us label {
+  color: var(--subtitle);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* ===== Inputs & Textarea ===== */
+section.contact-us input,
+section.contact-us textarea {
+  all: unset;
+  border: 1px solid rgba(175, 175, 175, 0.7);
+  background-color: rgba(36, 36, 70, 0.15);
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  color: var(--title);
+}
+
+/* Light Mode */
+.light section.contact-us input,
+.light section.contact-us textarea {
+  border: 1px solid rgba(128, 128, 128, 0.45);
+  background-color: rgba(255, 255, 255, 0.16);
+  box-shadow: 1px 1px 4px rgba(73, 73, 75, 0.1);
+}
+
+section.contact-us input:focus,
+section.contact-us textarea:focus,
+section.contact-us input:hover,
+section.contact-us textarea:hover {
+  border-color: var(--blue);
+  box-shadow: 0 0 6px rgba(93, 188, 252, 0.5);
+}
+
+/* ===== Textarea ===== */
+section.contact-us textarea {
+  min-height: 9rem;
+  resize: vertical;
+}
+
+/* ===== Submit Button ===== */
+section.contact-us .Submit {
+  background-color: var(--primary);
+  color: var(--title);
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  width: fit-content;
+  align-self:center;
+}
+
+section.contact-us .Submit:hover {
+  transform: scale(0.96);
+  background-color: var(--blue);
+  color: var(--secondary);
+}
+
+/* ===== Success Message ===== */
+.success-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.05rem;
+  margin-top: 1.5rem;
+  gap: 0.5rem;
+}
+
+/* ======================== */
+/* ===== Animation ===== */
+/* ======================== */
+section.contact-us .animation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.contact-us .email-animation {
+  width: 380px;
+}
+
+/* ======================== */
+/* ===== Responsive ===== */
+/* ======================== */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .contact-flex {
+    gap: 2rem;
+  }
+
+  section.contact-us .email-animation {
+    width: 320px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .contact-flex {
+    flex-direction: column;
+  }
+
+  section.contact-us .animation {
+    display: none;
+  }
+
+  section.contact-us form {
+    max-width: 100%;
+  }
+
+  section.contact-us .Submit {
+    align-self: center;
+    width: fit-content;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  section.contact-us .Submit {
+    width: fit-content;
+  }
+}

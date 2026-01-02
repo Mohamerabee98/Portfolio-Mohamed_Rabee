@@ -1,0 +1,48 @@
+footer.flex {
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.9rem;
+  flex-wrap: wrap;
+}
+
+footer.flex ul.flex {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+footer.flex ul.flex a {
+  color: var(--subtitle);
+  font-size: 0.9rem;
+  font-weight: 400;
+  transition: all 0.2s ease;
+}
+
+footer.flex ul.flex a:hover {
+  color: var(--blue);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+footer.flex p {
+  color: rgb(113, 113, 122);
+  margin: 0;
+}
+
+footer.flex span {
+  color: var(--subtitle);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 800px) {
+  footer.flex {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+}

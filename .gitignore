@@ -1,0 +1,19 @@
+# Node modules
+node_modules
+
+# Build / dist
+dist
+.next
+build
+
+# Firebase secret configs
+.firebase
+.firebase*
+firebase.json
+.firebaserc
+src/firebase.js
+
+# Env variables
+.env
+.env.local
+.env.production
