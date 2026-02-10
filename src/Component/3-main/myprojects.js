@@ -16,6 +16,14 @@ export const frontendProjects = [
     imgPath: "./26.webp",
   },
   {
+    Ptitle: "ModelIx",
+    category: ["React , Tailwind"],
+    Pdescription: `Modelix is an AI project that analyzes various files automatically, delivering accurate results quickly and efficiently, with an intuitive and user-friendly interface.".`,
+    iconlink: "https://modelix-1.web.app/",
+    iconGithub: "https://github.com/Mohamerabee98/Modelix",
+    imgPath: "./30.png",
+  },
+  {
     Ptitle: "MASAR company",
     category: ["js", "bootstrap"],
     Pdescription: `A digital solutions website offering web design, mobile applications, eCommerce services, branding, and social media management for businesses.`,
