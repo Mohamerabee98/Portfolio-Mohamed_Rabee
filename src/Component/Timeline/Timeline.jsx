@@ -49,6 +49,17 @@ const timelineData = [
       },
     ],
   },
+  { 
+    year: "2026",
+    events: [
+      {
+        side: "right",
+        title: "Programming Instructor (Kids & Teens)",
+        text: "Taught programming to students aged 10–17 using Blockly, Python, and web development. ",
+      },
+     
+    ],
+  },
 ];
 
 const Timeline = () => {

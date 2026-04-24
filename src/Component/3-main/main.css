@@ -60,7 +60,7 @@
   border-radius: 18px;
   overflow: hidden;
   position: relative;
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  transition: all .2s;
 }
 
 .project-card::before {
@@ -74,7 +74,7 @@
     transparent
   );
   opacity: 0;
-  transition: opacity 0.35s ease;
+  transition: all .2s;
 }
 
 .project-card:hover::before {

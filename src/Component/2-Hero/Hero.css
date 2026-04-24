@@ -9,8 +9,8 @@ section.hero {
 
 /* ===== Avatar ===== */
 .parent-avatar {
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   border: 2px solid rgb(201, 194, 186);
   padding: 2px;
@@ -35,13 +35,23 @@ section.hero h1.title {
   color: var(--title);
   text-align: left;
 }
+.left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--bgHeader);
+  border-radius: 10px;
+  padding: 10px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
 
+}
 section.hero p.subtitle {
   font-size: 1.15rem;
   color: var(--subtitle);
   margin-bottom: 28px;
   line-height: 1.8rem;
-  text-align: left;
+  text-align: center;
 }
 
 section.hero p.subtitle span { 
@@ -58,7 +68,7 @@ section.hero .all-icons .icon {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background-color: var(--bgHeader);
+  background-color: var(--bgIcon);
   display: flex;
   justify-content: center;
   align-items: center;

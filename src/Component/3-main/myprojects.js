@@ -8,12 +8,29 @@ export const frontendProjects = [
     imgPath: "./1.webp",
   },
   {
+    Ptitle: "Cashier-System",
+    category: ["React"],
+    Pdescription: `A full-stack POS system for managing products, categories, and invoices with real-time calculations, dashboard insights, and secure authentication.
+`,
+    iconlink: "https://github.com/Mohamerabee98/cashier_System",
+    iconGithub: "https://github.com/Mohamerabee98/cashier_System",
+    imgPath: "./C.png",
+  },
+  {
     Ptitle: "DevCode",
     category: ["React"],
     Pdescription: `A modern company website showcasing technical services, clean interface, smooth animations, interactive sections, and professional presentation of team expertise.`,
     iconlink: "https://devcode-21.web.app/",
     iconGithub: "https://github.com/Mohamerabee98/DevCode",
     imgPath: "./26.webp",
+  },
+  {
+    Ptitle: "Zain-Concrate",
+    category: ["React"],
+    Pdescription: `A modern responsive website for Zain Concrete, showcasing handmade concrete decor products with a clean UI, smooth animations, and premium visual style..`,
+    iconlink: "https://zain-concrete.web.app/",
+    iconGithub: "https://github.com/Mohamerabee98/Zain-Concrete",
+    imgPath: "./Z.png",
   },
   {
     Ptitle: "ModelIx",
@@ -90,6 +107,15 @@ export const frontendProjects = [
 ];
 
 export const backendProjects = [
+  {
+    Ptitle: "Cashier-System",
+    category: ["Express , node"],
+    Pdescription: `A full-stack POS system for managing products, categories, and invoices with real-time calculations, dashboard insights, and secure authentication.
+`,
+    iconlink: "https://github.com/Mohamerabee98/cashier_System",
+    iconGithub: "https://github.com/Mohamerabee98/cashier_System",
+    imgPath: "./C.png",
+  },
   {
     Ptitle: "Blog API",
     category: ["Express", "Sequelize"],

@@ -13,7 +13,7 @@ export const skills = {
   ],
   
   Languages: [
-    "JavaScript", "TypeScript", "C++", "SQL"
+    "JavaScript", "TypeScript", "C++", "SQL" , "Python"
   ],
   
 };

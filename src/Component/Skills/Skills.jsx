@@ -4,7 +4,7 @@ import { skills } from "./skillsTool.js";
 
 const Skills = () => {
   return (
-    <section className="skills-section">
+    <section id="Skills" className="skills-section">
       <h2 className="skills-title sections-title">My Skills</h2>
       <div className="skills-grid">
         {Object.entries(skills).map(([category, items]) => (
